@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    transition: .5s all;
+
+} 
+
+a{
+    cursor: pointer;
+}
+
+.lara{
+    color: white;
+}
+
+body {
+    background-color: #000000;
+}
+
+.white {
+    color: white;
+}
+
+header {
+    position: fixed;
+    border-right: 1px solid rgba(128, 128, 128, 0.13);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    justify-content: space-around;
+    color: white;
+    width: 20%;
+}
+
+.logo {
+    font-size: 1.3em;
+    margin-left: 10%;
+}
+
+.menu {
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10%;
+}
+
+.hamburg {
+    cursor: pointer;
+}
+
+.me-1{
+    margin-left: 10%;
+}
+
+
+
+.link-icon {
+    color: white;
+    width: 75%;
+    display: flex;
+    transition: .5s;
+    border: 1px solid transparent;
+}
+
+.link-icon:hover {
+    border: 1px solid transparent;
+    background-color: rgb(114, 114, 114);
+    padding: 13px;
+    border-radius: 4%;
+}
+
+.i {
+    margin-right: .5em;
+    width: 1.5625em;
+
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.container2 {
+    width: 75%;
+}
+
+.feed {
+    display: flex;
+    width: 29.375em;
+    margin: auto;
+    flex-direction: column;
+}
+
+.fto {
+    width: 2em;
+    height: 2em;
+}
+
+.story {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.13);
+}
+
+.story-fto {
+    width: 3.75em;
+    height: 3.75em;
+}
+
+.fto-per {
+    object-fit: cover;
+    max-width: 100%;
+    border: 1px solid transparent;
+    border-radius: 100%;
+}
+
+.info {
+    display: flex;
+    width: 100%;
+}
+
+.tam1 {
+    margin-left: 2%;
+}
+
+.pointer{
+    cursor: pointer;
+}
+.cinza {
+    color: #8F8F8F;
+}
+
+.azul {
+    color: #0095F6;
+}
+
+.border {
+    border: 1px solid white;
+}
+
+.desc {
+    display: flex;
+    width: 100%;
+}
+
+.ftovideo {
+    width: 29.25em;
+    height: 29.25em;
+    margin: auto;
+    position: relative;
+}
+
+.fv-post {
+    max-width: 100%;
+}
+
+.laranja {
+    color: #fb8500;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icone-post {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.minu {
+    text-transform: lowercase;
+}
+
+.comment {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex {
+    display: flex;
+}
+
+.mt {
+    margin-top: 1em;
+}
+
+.mt-2 {
+    margin-top: 2em;
+}
+
+.me {
+    margin-left: .2em;
+}
+
+.me-2{
+    margin-left: 2%;
+}
+
+.wi {
+    width: 100%;
+}
+
+.formcom {
+    background-color: transparent;
+    border: none;
+    color: #ffff;
+    outline: none;
+}
+
+.formcom:focus {
+    outline: none;
+}
+
+.heart {
+    position: absolute;
+    z-index: 10000;
+    width: 50%;
+    left: 25%;
+    top: 25%;
+    animation: coracao 2s infinite;
+    transform: rotate(-30deg);
+    display: none;
+
+}
+
+.block {
+    display: block;
+}
+
+@keyframes coracao {
+    0% {
+        /* Estado inicial */
+        transform: scale(0);
+    }
+
+    50% {
+        /* Estado final */
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+
+}
+
+.loading {
+    filter: invert(100%);
+    max-width: 100%;
+}
+.loading-b{
+    filter: invert(0);
+}
+
+.container-carregar {
+    margin: auto;
+    width: 10%;
+    animation: carregando 5s infinite;
+}
+
+@keyframes carregando {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+.container-principal {
+    width: 80%;
+    margin-left: auto;
+}
+
+.container-footer {
+    width: 30%;
+}
+
+.grow1 {
+    flex-grow: 1;
+}
+
+.img-perfil-fo {
+    width: 6.25em;
+}
+
+.me {
+    margin-left: 1em;
+}
+
+.center {
+    align-items: center;
+}
+
+.img-perfil-fo2 {
+    width: 18%;
+}
+
+.text-peq {
+    font-size: .8em;
+}
+
+.text-peq-2 {
+    font-size: .7em;
+}
+
+.mt--1 {
+    margin-top: .5em;
+}
+
+.none{
+    display: none;
+}
+
+.black{
+    color: #000000;
+}
+
+.bg-white{
+    background-color: whitesmoke;
+}
+.phone{
+    display: none;
+}
+
+@media screen and (min-width: 884px) and (max-width: 1326px) {
+    header {
+        position: fixed;
+        display: flex;
+        font-size: 1.2em;
+        color: white;
+        justify-content: flex-start;
+        bottom: 0vh;
+        background-color: #000000;
+        z-index: 100;
+        width: 10%;
+        margin-left: 0;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    
+    .logo{
+        display: none;
+    }
+
+    .none{
+        display: block;
+    }
+    .texto-div {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 883px) {
+
+    .none{
+        display: none;
+    }
+
+    .feed{
+        width: 100%;
+    }
+  
+
+    .post{
+        width: 100%;
+    }
+
+    header {
+        position: fixed;
+        height: 2em;
+        display: flex;
+        font-size: 1.2em;
+        color: white;
+        width: 100%;
+        justify-content: flex-start;
+        bottom: 0vh;
+        background-color: #000000;
+        z-index: 100;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .hamburg:not(:first) {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        background-color: #000000;
+        z-index: 100;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .texto-div {
+        display: none;
+    }
+
+    .container-principal {
+        margin: auto;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .container-principal {
+        width: 100%;
+    }
+
+    .container2 {
+        width: 100%;
+    }
+
+
+    .story {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .img-perfil-fo {
+        width: 2em;
+    }
+
+    .ftovideo {
+        width: 18.75em;
+        height: 18.75em;
+        position: relative;
+    }
+
+.desc{
+    font-size: .9em;
+}
+
+
+    .phone{
+        display: block;
+    }
+
+    .me{
+        display: none;
+    }
+
+    .p-13{
+        padding: 13px;
+    }
+}
